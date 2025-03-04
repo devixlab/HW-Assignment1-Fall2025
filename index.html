@@ -7,26 +7,94 @@
   <meta name="keywords" content="Tyler, The Creator, Hip-Hop, Odd Future, IGOR, Call Me If You Get Lost">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tyler, The Creation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.1em;
+      color: #444;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    nav ul li {
+      background-color: #333;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav ul li:hover {
+      background-color: #555;
+    }
+    .grid-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      text-align: center;
+    }
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+      padding: 5px;
+    }
+    .bordered {
+      border: 2px solid #222;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-
   <header>
+    <nav>
+      <ul>
+        <li><a href="#early-start">Early Start</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#discography">Discography</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#more-info">More Info</a></li>
+      </ul>
+    </nav>
     <h1>Tyler, The Creator</h1>
-    <p><strong>Tyler, The Creator</strong> is an American rapper, singer, and producer known for boundary-pushing music and vision. He is the co-founder of the hip-hop collective <em>Odd Future</em> and recently released his latest album, <mark>CHROMAKOPIA</mark>.</p>
+    <p class="highlight"><strong>Tyler, The Creator</strong> is an American rapper, singer, and producer known for boundary-pushing music and vision. He is the co-founder of the hip-hop collective <em>Odd Future</em> and recently released his latest album, <mark>CHROMAKOPIA</mark>.</p>
   </header>
 
   <main>
-    <section>
+    <section id="early-start" class="bordered">
       <h2>Early Start</h2>
       <p>Tyler Gregory Okonma, a.k.a. Tyler, The Creator, was born in 1991 in Ladera Heights, California. He had an early interest in music and started making his first mixtapes and melodies as a teen. In 2007, he co-founded Odd Future, which propelled him to fame as a result of his signature energetic and iterative music style.</p>
     </section>
 
-    <section>
+    <section id="career">
       <h2>Career</h2>
       <p>Since his debut album <strong>"Goblin"</strong> in 2011, Tyler has released multiple critically acclaimed albums, winning numerous awards including Grammys for his albums <em>"IGOR"</em> and "Call Me If You Get Lost." His music usually explores themes of identity, creativity, and self-expression, often defying traditional hip-hop composition.</p>
     </section>
 
-    <section>
+    <section id="discography">
       <h2>Discography</h2>
       <ol>
         <li>Goblin (2011)</li>
@@ -39,7 +107,7 @@
       </ol>
     </section>
 
-    <section>
+    <section id="more-info">
       <h3>More Info</h3>
       <ul>
         <li>Collaborations</li>
@@ -48,18 +116,18 @@
       </ul>
     </section>
 
-    <section>
+    <section id="gallery" class="grid-gallery">
       <h3>Gallery</h3>
       <figure>
-        <img src="images/Image 1.jpg" alt="Image 1">
+        <img src="images/Image1.jpg" alt="Image 1">
         <figcaption>Visionary</figcaption>
       </figure>
       <figure>
-        <img src="images/Image 2.jpg" alt="Image 2">
+        <img src="images/Image2.jpg" alt="Image 2">
         <figcaption>Creative</figcaption>
       </figure>
       <figure>
-        <img src="images/Image 3.jpg" alt="Image 3">
+        <img src="images/Image3.jpg" alt="Image 3">
         <figcaption>Creator</figcaption>
       </figure>
     </section>
@@ -68,14 +136,10 @@
       <p>Author Info: Devin Verity, known to none as Devin, The Creator, is a student at the University of Miami.</p>
       <p>Visit Tyler's <a href="https://tylerthecreator.com" target="_blank">Official Website</a> or follow his <a href="https://twitter.com/tylerthecreator" target="_blank">Twitter Page</a>.</p>
     </address>
-
   </main>
 
   <footer>
-    <p>Thank you for visiting this profile page dedicated to Tyler, The Creator.</p>
+    <p>Thank you for visiting this attemot at a webpage, there is no tip jar at this time.</p>
   </footer>
-
-  <!-- This webpage was created as part of a web lab assignment -->
-  
 </body>
 </html>
